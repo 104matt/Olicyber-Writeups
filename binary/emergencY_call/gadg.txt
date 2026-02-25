@@ -1,0 +1,81 @@
+
+
+
+Gadgets
+=======
+
+
+0x00000000004010da: add al, ch; cmp eax, 0xb8ffffff; add byte ptr [rax], al; add byte ptr [rax], al; leave; ret; 
+0x00000000004010cd: add byte ptr [rax - 0x77], cl; ret 0xbe; 
+0x00000000004010ca: add byte ptr [rax], 0; add byte ptr [rax - 0x77], cl; ret 0xbe; 
+0x00000000004010cb: add byte ptr [rax], al; add byte ptr [rax - 0x77], cl; ret 0xbe; 
+0x00000000004010e1: add byte ptr [rax], al; add byte ptr [rax], al; leave; ret; 
+0x00000000004010e2: add byte ptr [rax], al; add cl, cl; ret; 
+0x00000000004010d9: add byte ptr [rax], al; call 0x101d; mov eax, 0; leave; ret; 
+0x000000000040100e: add byte ptr [rax], al; mov rdi, rax; mov rax, 0x3c; syscall; 
+0x000000000040100e: add byte ptr [rax], al; mov rdi, rax; mov rax, 0x3c; syscall; ret; 
+0x00000000004010e3: add byte ptr [rax], al; leave; ret; 
+0x0000000000401018: add byte ptr [rax], al; syscall; 
+0x0000000000401018: add byte ptr [rax], al; syscall; ret; 
+0x00000000004010e4: add cl, cl; ret; 
+0x0000000000401008: and esp, 0xfffffff0; call 0x103c; mov rdi, rax; mov rax, 0x3c; syscall; 
+0x0000000000401008: and esp, 0xfffffff0; call 0x103c; mov rdi, rax; mov rax, 0x3c; syscall; ret; 
+0x0000000000401007: and rsp, 0xfffffffffffffff0; call 0x103c; mov rdi, rax; mov rax, 0x3c; syscall; 
+0x0000000000401007: and rsp, 0xfffffffffffffff0; call 0x103c; mov rdi, rax; mov rax, 0x3c; syscall; ret; 
+0x00000000004010db: call 0x101d; mov eax, 0; leave; ret; 
+0x000000000040100b: call 0x103c; mov rdi, rax; mov rax, 0x3c; syscall; 
+0x000000000040100b: call 0x103c; mov rdi, rax; mov rax, 0x3c; syscall; ret; 
+0x0000000000401016: cmp al, 0; add byte ptr [rax], al; syscall; 
+0x0000000000401016: cmp al, 0; add byte ptr [rax], al; syscall; ret; 
+0x00000000004010dc: cmp eax, 0xb8ffffff; add byte ptr [rax], al; add byte ptr [rax], al; leave; ret; 
+0x0000000000401009: in al, 0xf0; call 0x103c; mov rdi, rax; mov rax, 0x3c; syscall; 
+0x0000000000401009: in al, 0xf0; call 0x103c; mov rdi, rax; mov rax, 0x3c; syscall; ret; 
+0x00000000004010e0: mov eax, 0; leave; ret; 
+0x0000000000401014: mov eax, 0x3c; syscall; 
+0x0000000000401014: mov eax, 0x3c; syscall; ret; 
+0x000000000040102d: mov eax, ecx; syscall; 
+0x000000000040102d: mov eax, ecx; syscall; ret; 
+0x0000000000401011: mov edi, eax; mov rax, 0x3c; syscall; 
+0x0000000000401011: mov edi, eax; mov rax, 0x3c; syscall; ret; 
+0x0000000000401021: mov edi, esi; mov rsi, rdx; mov rdx, rcx; mov r10, r8; mov r8, r9; syscall; 
+0x000000000040102a: mov edx, eax; mov r8, r9; syscall; 
+0x000000000040102a: mov edx, eax; mov r8, r9; syscall; ret; 
+0x0000000000401027: mov edx, ecx; mov r10, r8; mov r8, r9; syscall; 
+0x0000000000401027: mov edx, ecx; mov r10, r8; mov r8, r9; syscall; ret; 
+0x0000000000401024: mov esi, edx; mov rdx, rcx; mov r10, r8; mov r8, r9; syscall; 
+0x0000000000401024: mov esi, edx; mov rdx, rcx; mov r10, r8; mov r8, r9; syscall; ret; 
+0x0000000000401005: mov esi, esp; and rsp, 0xfffffffffffffff0; call 0x103c; mov rdi, rax; mov rax, 0x3c; syscall; 
+0x0000000000401029: mov r10, r8; mov r8, r9; syscall; 
+0x0000000000401029: mov r10, r8; mov r8, r9; syscall; ret; 
+0x000000000040102c: mov r8, r9; syscall; 
+0x000000000040102c: mov r8, r9; syscall; ret; 
+0x0000000000401013: mov rax, 0x3c; syscall; 
+0x0000000000401013: mov rax, 0x3c; syscall; ret; 
+0x0000000000401010: mov rdi, rax; mov rax, 0x3c; syscall; 
+0x0000000000401010: mov rdi, rax; mov rax, 0x3c; syscall; ret; 
+0x0000000000401020: mov rdi, rsi; mov rsi, rdx; mov rdx, rcx; mov r10, r8; mov r8, r9; syscall; 
+0x0000000000401026: mov rdx, rcx; mov r10, r8; mov r8, r9; syscall; 
+0x0000000000401026: mov rdx, rcx; mov r10, r8; mov r8, r9; syscall; ret; 
+0x0000000000401023: mov rsi, rdx; mov rdx, rcx; mov r10, r8; mov r8, r9; syscall; 
+0x0000000000401023: mov rsi, rdx; mov rdx, rcx; mov r10, r8; mov r8, r9; syscall; ret; 
+0x0000000000401004: mov rsi, rsp; and rsp, 0xfffffffffffffff0; call 0x103c; mov rdi, rax; mov rax, 0x3c; syscall; 
+0x0000000000401006: out 0x48, al; and esp, 0xfffffff0; call 0x103c; mov rdi, rax; mov rax, 0x3c; syscall; 
+0x0000000000401032: pop rdi; ret; 
+0x0000000000401036: pop rdx; ret; 
+0x0000000000401034: pop rsi; ret; 
+0x000000000040102b: ret 0x894d; 
+0x00000000004010d0: ret 0xbe; 
+0x0000000000401028: retf 0x894d; ret 0x894d; 
+0x000000000040100c: sub al, 0; add byte ptr [rax], al; mov rdi, rax; mov rax, 0x3c; syscall; 
+0x000000000040100c: sub al, 0; add byte ptr [rax], al; mov rdi, rax; mov rax, 0x3c; syscall; ret; 
+0x0000000000401022: test dword ptr [rax - 0x77], 0xca8948d6; mov r10, r8; mov r8, r9; syscall; 
+0x0000000000401022: test dword ptr [rax - 0x77], 0xca8948d6; mov r10, r8; mov r8, r9; syscall; ret; 
+0x0000000000401039: xor eax, edi; ret; 
+0x0000000000401038: xor rax, rdi; ret; 
+0x000000000040103a: clc; ret; 
+0x00000000004010e5: leave; ret; 
+0x000000000040101c: ret; 
+0x000000000040101a: syscall; 
+0x000000000040101a: syscall; ret; 
+
+72 gadgets found

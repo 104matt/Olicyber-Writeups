@@ -1,0 +1,8 @@
+from pwn import *
+
+con = remote("test1.challs.olicyber.it", 15004)
+
+con.recvuntil(b"Livello 1:")
+con.recvline()
+values = con.recvline().split()
+print(values)
