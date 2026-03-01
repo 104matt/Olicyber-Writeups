@@ -1,0 +1,13 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schema.json",
+  "mcpServers": {
+    "ida-pro": {
+      "command": "python3",
+      "args": ["/home/cent000/Tools/ida_pro_real_no_fake/ida-pro-mcp"],
+      "env": {
+        "IDADIR": "/home/cent000/Tools/ida_pro_real_no_fake",
+        "PYTHONPATH": "/home/cent000/Tools/ida_pro_real_no_fake/python/3"
+      }
+    }
+  }
+}
